@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Weather</title>
+<!-- font  -->
+<link href="img/logo.png" rel="icon">
+<!--  -->
+<!-- font icoon -->
+<link rel="stylesheet" href="css/all.min.css">
+<!-- style -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styel.css">
+</head>
+<body class="bg-dark"   data-bs-spy="scroll" data-bs-target="#navbar">
+
+<!--  -->
+<nav class="navbar navbar-expand-lg text-white bg-dark  van">
+  <div class="container ">
+    <div class="navbar-brand text-white  w-25 d-flex flex-wrap">
+      <a class=" w-25 d-flex  align-items-center" href="#"><img src="img/logo.png" alt="">
+      <div class="w-75 textLogo ps-3">
+        <h5 class="w-75">Weather</p>
+        <p class="w-75 fs-6">tagline goes here</p>
+      </div>
+    </a>
+    </div>
+    <button class="navbar-toggler  btn btn-primary btn-sm    " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars text-primary"></i>
+    </button>
+    <div class="collapse navbar-collapse flex " id="navbarText">
+      <ul class="navbar-nav  mb-2 mb-lg-0   w-50 justify-content-around  align-items-center  ul ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="header" id="Home">
+  <div class="container col-md mb-3  bir d-flex justify-content-between align-items-center rounded-5">
+      <input   id="search" type="text" class="inbu " placeholder="Search by city name or country" aria-label="Search by city name or country"   autocomplete="off" autocapitalize="none" autocorrect="off">
+    <abbr title="Select your location" class="fs-1"><i  onclick="locationn()" class="fa-solid fa-location-dot     text-primary me-3"></i></abbr>
+      
+  </div>
+</header>
+
+
+<section >
+  <div class=" container info  text-white pb-5  ">
+      <div class="row  ">
+        <div class="   bg   col-md-4 radius bord  mb-3">
+          <p class="text-center  w-100 " id="tarekh"></p>
+          <p id="contry" class="ps-3 mt-5 w-100"></p>
+          <div class="w-100 d-flex fs mt-3">
+            <p class="w-50 ps-3" id="tempToDay"></p>
+            <p class="w-50  text-center" id="icon">  </p>
+          </div>  
+          <p class="ps-3" id="suuny"></p>
+        </div>
+
+
+        <div class="b  col-md-4 radius bord mb-3">
+          <p class="w-100 text-center  " id="tomorrow"></p>
+          <div class=" text-center  d-flex pt-2 fs-3">
+            <div class="w-50 pt-3">
+              <p id="tomorrowMaxTemp"></p>  
+              <p id="tomorrowMinTemp"></p>
+            </div>
+            <div class="w-50">
+              <p id="tomorrowIcon"></p>
+              <p id="tomorrowText"></p>  
+            </div>
+          </div>
+        </div>
+
+
+        <div class=" bg  col-md-4 radius bord mb-3">
+          <p class="w-100 text-center  " id="AfterTomorrow"></p>
+          <div class=" text-center d-flex fs-3 pt-2">
+            <div class="w-50 pt-3">
+              <p id="AfterTomorrowMaxTemp"></p>
+              <p id="AfterTomorrowMinTemp"></p>  
+            </div>
+            <div class="w-50">
+              <p id="AfterTomorrowIcon"></p>
+              <p id="AfterTomorrowText"></p>  
+            </div>
+          </div>
+        </div>
+    
+      </div>
+  </div>
+</section>
+
+
+
+
+<footer id="News">
+  <div class="container  ">
+    <div class="row d-flex">
+      <div class="col-md-9 ">
+        <div class="container col-md mb-3  bir d-flex justify-content-between rounded-5 ">
+          <input type="text" class="inbu " placeholder="Enter your email to subscribe..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <button class="btn btn-primary rounded-5 w-25 bt" type="button">Sub</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-md-offset-1 ">
+        <div class=" d-flex justify-content-around">
+          <div class=" social">
+            <a href="#"><i class="fa-brands fa-facebook   "></i></a>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-twitter  "></i></a>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-google-plus "></i></a>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-pinterest "></i></a>
+          </div>
+        </div>    
+      </div>
+
+    </div>
+    <p class="text-white ps-3 pt-5">Copyright 20023. Designed by Abdullah Anwar. All rights reserved</p>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--  -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="js/main.js"></script>
+<!--  -->
+</body>
+</html>
+
+
+
+
+
+
+
+
